@@ -1,31 +1,26 @@
-#
-# test-builds.yml
-# Do test builds to catch compile errors
-#
-
 name: Build Artillery_Ruby
 
 on:
   pull_request:
     branches:
-    - 2.1.x-swx2
+    - 2.1.x-gpro
     paths-ignore:
     - config/**
     - data/**
     - docs/**
     - '**/*.md'
     tags:
-      - 'v*.*.*.swx2-*'
+      - 'v*.*.*.gpro-*'
   push:
     branches:
-    - 2.1.x-swx2
+    - 2.1.x-gpro
     paths-ignore:
     - config/**
     - data/**
     - docs/**
     - '**/*.md'
     tags:
-      - 'v*.*.*.swx2-*'
+      - 'v*.*.*.gpro-*'
 
 env:
   platform-env: Artillery_Ruby
@@ -33,7 +28,7 @@ env:
 jobs:
   build:
     name: Build Artillery_Ruby
-    if: github.repository == 'freakydude/Marlin'
+    if: github.repository == 'MirakelPrints/Marlin'
 
     runs-on: ubuntu-latest
 
