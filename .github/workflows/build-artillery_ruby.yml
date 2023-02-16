@@ -10,7 +10,7 @@ on:
     - docs/**
     - '**/*.md'
     tags:
-      - 'v*.*.*.gpro-*'
+      - '*.*.*-gpro_*'
   push:
     branches:
     - 2.1.x-gpro
@@ -20,7 +20,7 @@ on:
     - docs/**
     - '**/*.md'
     tags:
-      - 'v*.*.*.gpro-*'
+      - '*.*.*-gpro_*'
 
 env:
   platform-env: Artillery_Ruby
